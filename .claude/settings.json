@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Directory \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\\" | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -File \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\\" | ForEach-Object { $_.Name })",
+      "PowerShell(Get-ChildItem -Recurse -Directory \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\src\" | ForEach-Object { $_.FullName.Replace\\(\"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem -Recurse -File \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\src\" | ForEach-Object { $_.FullName.Replace\\(\"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem -Recurse -File \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\public\" | ForEach-Object { $_.FullName.Replace\\(\"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\\", \"\"\\) })",
+      "PowerShell(Write-Host \"=== Checking common Android SDK paths ===\"; $paths = @\\(\"$env:LOCALAPPDATA\\\\Android\\\\Sdk\", \"C:\\\\Android\\\\Sdk\", \"$env:ProgramFiles\\\\Android\\\\Android Studio\", \"${env:ProgramFiles\\(x86\\)}\\\\Android\\\\Android Studio\", \"D:\\\\Android\\\\Sdk\", \"E:\\\\Android\\\\Sdk\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Host \"FOUND: $p\" } else { Write-Host \"NOT: $p\" } }; Write-Host \"=== Gradle wrapper ===\"; if \\(Test-Path \"e:\\\\SX\\\\weisheng-app-main\\\\weisheng-app-main\\\\android\\\\gradlew.bat\"\\) { Write-Host \"EXISTS\" } else { Write-Host \"NOT FOUND\" })"
+    ]
+  }
+}

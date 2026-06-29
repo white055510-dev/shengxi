@@ -1,0 +1,6 @@
+{
+  "name": "声隙 Shengxi",
+  "description": "声隙 (Shengxi) - 系统级智能声纹降噪与安全通话应用。采用端到端本地处理技术，为您提供最纯净、私密的通话体验。",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

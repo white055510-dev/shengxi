@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">唯声</string>
+    <string name="title_activity_main">唯声</string>
+    <string name="package_name">com.weisheng.app</string>
+    <string name="custom_url_scheme">com.weisheng.app</string>
+</resources>

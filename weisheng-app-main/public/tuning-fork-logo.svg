@@ -1,0 +1,37 @@
+<svg width="512" height="512" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#0A0A0A"/>
+  
+  <!-- Symmetric Sound Ripples (Expanding Arcs) -->
+  <path d="M30 40C25 45 25 55 30 60" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M22 35C15 42 15 58 22 65" stroke="#C9A96E" stroke-width="1" stroke-linecap="round" opacity="0.15"/>
+  
+  <path d="M70 40C75 45 75 55 70 60" stroke="#C9A96E" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+  <path d="M78 35C85 42 85 58 78 65" stroke="#C9A96E" stroke-width="1" stroke-linecap="round" opacity="0.15"/>
+
+  <!-- Abstract Tuning Fork -->
+  <g transform="translate(50, 50)">
+    <!-- Main Fork U-Shape -->
+    <path 
+      d="M-8 -15 Q-8 5 0 5 Q8 5 8 -15" 
+      stroke="#C9A96E" 
+      stroke-width="3" 
+      stroke-linecap="round" 
+      fill="none"
+    />
+    <!-- Stem -->
+    <path 
+      d="M0 5 L0 25" 
+      stroke="#E8D5B5" 
+      stroke-width="3" 
+      stroke-linecap="round"
+    />
+    <!-- Base Plate / Geometric Accent -->
+    <rect x="-4" y="27" width="8" height="2" rx="1" fill="#E8D5B5"/>
+  </g>
+
+  <!-- Glowing Accent Circles -->
+  <circle cx="50" cy="50" r="1.5" fill="#E8D5B5">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="infinity" />
+  </circle>
+</svg>
